@@ -528,9 +528,6 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .logo {
-    width: 99px;
-  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
@@ -569,7 +566,7 @@ template {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 320px;
+    max-width: 92%;
   }
   .logo {
     width: 99px;
