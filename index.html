@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Your Plan - Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -87,8 +88,40 @@
           <span class="rating__counter">4.5/<span class="rating__counter-less">5</span></span>
         </div>
       </div>
+      <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="swiper-slide__item" src="img/slide-1.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__item" src="img/slide-2.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__item" src="img/slide-1.jpg" alt="slide" />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          </div>
+        </div>
+        <!-- /.slider -->
+        <div class="hotel-price__wrapper">
+          <div class="hotel-price"></div>
+          <div class="hotel-map"></div>
+        </div>
+      </div>
+      <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
