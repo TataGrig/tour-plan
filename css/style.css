@@ -1320,13 +1320,6 @@ template {
   resize: none;
 }
 
-.footer__sendarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: space-between;
-}
-
 .footer__button {
   min-width: 160px;
   min-height: 50px;
@@ -1339,6 +1332,7 @@ template {
   border: none;
   color: #fff;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .footer__info {
