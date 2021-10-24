@@ -1441,7 +1441,7 @@ template {
   .logo {
     width: 132px;
   }
-  .navbar-tops {
+  .navbar-top {
     padding-bottom: 30px;
     padding-top: 30px;
   }
@@ -1593,6 +1593,9 @@ template {
   body {
     padding-top: 89px;
   }
+  .stop-scrolling {
+    overflow: hidden;
+  }
   .navbar--mobile__fixed {
     position: fixed;
     left: 0;
@@ -1623,7 +1626,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 72px;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
