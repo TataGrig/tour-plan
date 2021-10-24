@@ -4,8 +4,8 @@ const hotelSlider = new Swiper('.hotel-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
+    nextEl: '.hotel-slider__button_next',
+    prevEl: '.hotel-slider__button_prev',
   },
 
   effect: 'coverflow',
@@ -23,8 +23,8 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews-slider__button--next',
-    prevEl: '.reviews-slider__button--prev',
+    nextEl: '.reviews-slider__button_next',
+    prevEl: '.reviews-slider__button_prev',
   },
   keyboard: {
     enabled: true,
@@ -38,8 +38,8 @@ menuButton.addEventListener('click',
 function () {
   console.log('Клик по кнопке меню');
   const navbarBottom = document.querySelector(".navbar-bottom");
-  navbarBottom.classList.toggle("navbar-bottom--visible");
+  navbarBottom.classList.toggle("navbar-bottom_visible");
   const body = document.querySelector("body");
-  body.classList.toggle("stop-scrolling");
+  body.classList.toggle("body_stop_scrolling");
 
 })
