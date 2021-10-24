@@ -1596,7 +1596,7 @@ template {
   .body_stop_scrolling {
     overflow: hidden;
   }
-  .navbar__mobile_fixed {
+  .navbar_mobile_fixed {
     position: fixed;
     left: 0;
     top: 0;
