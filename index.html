@@ -392,9 +392,9 @@ trip - full day" class="card__image">
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title_mb_3">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your full name*"><input type="text" class="footer__input" placeholder="Phone number*">
-            <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form">
+            <input type="text" class="footer__input" placeholder="Your full name*" name="name"><input type="text" class="footer__input" placeholder="Phone number*" name="phone">
+            <textarea  class="footer__message" placeholder="Message" name="message"></textarea>
             <div class="footer__buttonarea">
               <button class="butoon footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
