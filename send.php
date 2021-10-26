@@ -54,3 +54,15 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+
+// Формирование самого письма
+$title = "New message Best Tour Plan";
+$body = "
+<h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>Message:</b><br>$message
+";

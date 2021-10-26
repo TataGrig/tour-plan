@@ -243,6 +243,21 @@
     &__social
       &-network
         grid-column: span 14
+  .modal
+    &__dialog
+      padding: 30px 57px
+      width: 400px
+    &__close
+      width: 14px
+      height: 14px
+      right: 13px
+      top: 13px
+    &__title
+      font-size: 18px
+    &__input
+      font-size: 12px
+    &__message
+      font-size: 12px
 @media (max-width: 576px)
   .container
     max-width: 92%
@@ -332,6 +347,26 @@
       grid-column: 1
       justify-self: start
       margin-top: -22px
+  .modal
+    &__dialog
+      padding: 30px 42px
+      width: 350px
+    &__close
+      width: 13px
+      height: 13px
+      right: 13px
+      top: 13px
+    &__title
+      font-size: 15px
+    &__input
+      font-size: 12px
+    &__message
+      font-size: 12px
+    &__buttonarea
+      flex-direction: column-reverse
+      align-items: start
+    &__button
+      margin-top: 15px
 @media ( max-width: 320px)
   .footer
     padding-top: 69px
@@ -352,3 +387,7 @@
       justify-self: center
       &__ul
         justify-content: space-between
+  .modal
+    &__dialog
+      padding: 20px 10px
+      width: 90%
