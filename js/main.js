@@ -63,4 +63,13 @@ function openModal() {
   modalOverlay.addClass("modal__overlay_visible");
   modalDialog.addClass("modal__dialog_visible");
 }
+
+$(document).on('keydown', function(e){
+   if(e.keyCode === 27){
+     const modalOverlay = $(".modal__overlay");
+     const modalDialog = $(".modal__dialog");
+     modalOverlay.removeClass("modal__overlay_visible");
+     modalDialog.removeClass("modal__dialog_visible");
+   }
+});
 });
