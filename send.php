@@ -8,15 +8,27 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$form = $_POST['form_name'];
+$email = $_POST['email'];
 
 // Формирование самого письма
-$title = "New message Best Tour Plan";
-$body = "
-<h2>New message</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
-";
+if($form == "1") {
+    $title = "New message Best Tour Plan";
+    $body = "
+    <h2>New message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message
+    ";
+} else {
+    $title = "New Subscriber from Best Tour Plan";
+    $body = "
+    <h2>New Subscriber</h2>
+    <b>Email:</b> $email<br>
+    ";
+}
+
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -54,6 +66,10 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+
+
+
+
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];

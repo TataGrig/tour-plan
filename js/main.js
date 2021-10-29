@@ -66,10 +66,18 @@ function openModal() {
 
 $(document).on('keydown', function(e){
    if(e.keyCode === 27){
-     const modalOverlay = $(".modal__overlay");
-     const modalDialog = $(".modal__dialog");
-     modalOverlay.removeClass("modal__overlay_visible");
-     modalDialog.removeClass("modal__dialog_visible");
+     closeModal(e);
    }
 });
+
+$('.modal__form').validate({
+  messages: {
+    name: "please specify your name",
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    }
+  }
+})
+
 });

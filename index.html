@@ -220,6 +220,7 @@
           <span class="packages__sale">Flash offer</span>
           <div class="packages__description">
             <h3 class="packages__hotel-name">LUX* Belle Mare</h3>
+
             <div class="packages-info">
               <div class="packages-info__address">
                 <img src="img/map-pin.svg" alt="Icon: Location" class="packages__icon">
@@ -328,6 +329,7 @@
         <span class="newsletter-title_strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <input type="hidden" name="form_name" value="2"></input>
         <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
         <button class="subscribe__button">Send</button>
       </form>
@@ -571,8 +573,8 @@ trip - full day" class="card__image">
         <img src="img/close.svg" alt="Icon: close">
       </a>
       <h3 class="modal__title modal__title_mb_3">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your full name*" name="name"><input type="text"
+      <form action="send.php" method="POST" class="modal__form" form_name="1">
+        <input type="hidden" name="form_name" value = "1"/><input type="text" class="input modal__input" placeholder="Your full name*" name="name"><input type="text"
           class="input modal__input" placeholder="Phone number*" name="phone"><input type="text" class="input modal__input" placeholder="Email*" name="email">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__buttonarea">
@@ -586,6 +588,7 @@ trip - full day" class="card__image">
   <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
