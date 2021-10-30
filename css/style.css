@@ -663,7 +663,7 @@ template {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 32, 74px;
 }
 .booking__per-room {
   font-style: normal;
@@ -714,6 +714,7 @@ template {
   margin-left: 8px;
 }
 .booking__button {
+  padding: 13px 84px;
   width: 100%;
   min-height: 45px;
   font-size: 14px;
@@ -766,7 +767,7 @@ template {
   position: relative;
 }
 .packages-card__haven {
-  height: 500px;
+  max-height: 500px;
   width: 730px;
   display: flex;
   flex-direction: column;
@@ -786,7 +787,7 @@ template {
   position: relative;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
-  height: 500px;
+  max-height: 500px;
   width: 50%;
   overflow: hidden;
   -o-object-fit: cover;
@@ -804,7 +805,7 @@ template {
   color: #fff;
   background-color: #0A223D;
   padding: 46px 21px 60px 43px;
-  height: 500px;
+  max-height: 500px;
   width: 50%;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -957,9 +958,6 @@ template {
   font-weight: 600;
   line-height: 45px;
   text-transform: uppercase;
-}
-.newsletter__section {
-  margin-top: 50px;
 }
 
 .subscribe {
@@ -1431,6 +1429,17 @@ template {
        object-fit: cover;
   }
 
+  .packages-card {
+    width: 300px;
+    max-height: 498px;
+  }
+  .packages-card__haven {
+    width: 626px;
+  }
+  .packages__description_large {
+    padding: 24px 20px 40px 20px;
+  }
+
   .card {
     width: 230px;
     height: 255px;
@@ -1469,6 +1478,9 @@ template {
     width: 340px;
   }
 
+  .hotel {
+    padding-bottom: 30px;
+  }
   .hotel-grid {
     flex-direction: column;
   }
@@ -1483,11 +1495,30 @@ template {
   }
 
   .booking {
+    padding: 27px 22px;
+    height: 210px;
     width: 340px;
   }
 
   .map {
     width: 340px;
+    height: 210px;
+  }
+
+  .packages-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+  }
+  .packages-card {
+    width: 100%;
+  }
+  .packages-card__haven {
+    max-height: 500px;
+    width: 100%;
+  }
+  .packages__description_large {
+    height: 500px;
   }
 
   .newsletter__section {
@@ -1696,6 +1727,29 @@ template {
     width: 100%;
   }
 
+  .packages {
+    padding-top: 30px;
+  }
+  .packages__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 57px;
+    margin-bottom: 35px;
+  }
+  .packages-card {
+    width: 100%;
+    max-height: 498px;
+  }
+  .packages-card__haven {
+    width: 100%;
+  }
+  .packages__description_large {
+    padding: 24px 20px 40px 20px;
+  }
+
+  .newsletter__section {
+    margin-top: 0;
+  }
   .newsletter-wrapper {
     flex-direction: column;
     max-width: 576px;
@@ -1771,6 +1825,50 @@ template {
     font-size: 12px;
   }
 }
+@media (max-width: 640px) {
+  .packages-wrapper {
+    grid-gap-row: 20px;
+    grid-gap-column: 10px;
+    justify-items: center;
+  }
+  .packages-card {
+    width: 100%;
+    max-height: 370px;
+  }
+  .packages-card__haven {
+    width: 100%;
+  }
+  .packages__img {
+    height: 150px;
+  }
+  .packages__img_large {
+    max-height: 370px;
+  }
+  .packages__description {
+    height: 220px;
+    padding: 15px 22px;
+  }
+  .packages__description_large {
+    max-height: 370px;
+    padding: 46px 21px 60px 43px;
+  }
+  .packages__hotel-name {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+  .packages-info__room {
+    margin-bottom: 13px;
+  }
+  .packages__button {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px 20px;
+  }
+  .packages__hotel-description {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .container {
     max-width: 92%;
@@ -1796,6 +1894,56 @@ template {
     margin-bottom: 20px;
   }
 
+  .booking__button {
+    padding: 13px 54px;
+  }
+
+  .packages__title {
+    font-size: 18px;
+  }
+  .packages-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-gap-row: 20px;
+  }
+  .packages-card {
+    width: 100%;
+    max-height: 350px;
+  }
+  .packages-card__haven {
+    flex-wrap: nowrap;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .packages__img {
+    height: 250px;
+  }
+  .packages__img_large {
+    height: 250px;
+    width: 100%;
+  }
+  .packages__description {
+    height: 200px;
+    padding: 15px 33px;
+  }
+  .packages__description_large {
+    width: 100%;
+    height: 200px;
+    padding: 15px 33px;
+  }
+  .packages__hotel-name {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+  .packages-info__room_haven {
+    margin-bottom: 13px;
+  }
+
+  .score {
+    display: none;
+  }
+
   .newsletter {
     padding: 76px 0 83px 0;
   }
@@ -1811,10 +1959,6 @@ template {
 
   .subscribe {
     width: 100%;
-  }
-
-  .newsletter__section {
-    margin-top: 20px;
   }
 
   .reviews {
@@ -1931,6 +2075,10 @@ template {
   }
 }
 @media (max-width: 320px) {
+  .hotel {
+    padding-bottom: 0;
+  }
+
   .footer {
     padding-top: 69px;
     padding-bottom: 0px;

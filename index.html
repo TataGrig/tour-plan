@@ -175,7 +175,7 @@
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
-  <!-- <section class="packages">
+  <section class="packages">
     <div class="container">
       <h2 class="packages__title">Other packages</h2>
       <div class="packages-wrapper">
@@ -210,7 +210,7 @@
               <span class="packages-info__old-price">$ 10,500</span>
               <div class="packages__buttonarea">
                 <span class="packages-info__new-price">$ 8,500</span>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button packages__button_large ">Book Now</button>
               </div>
             </div>
           </div>
@@ -322,7 +322,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <section class="newsletter newsletter__section">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">subscribe to our
@@ -574,8 +574,10 @@ trip - full day" class="card__image">
       </a>
       <h3 class="modal__title modal__title_mb_3">Booking</h3>
       <form action="send.php" method="POST" class="modal__form" form_name="1">
-        <input type="hidden" name="form_name" value = "1"/><input type="text" class="input modal__input" placeholder="Your full name*" name="name"><input type="text"
-          class="input modal__input" placeholder="Phone number*" name="phone"><input type="text" class="input modal__input" placeholder="Email*" name="email">
+        <input type="hidden" name="form_name" value = "1"/>
+        <input type="text" class="input modal__input" placeholder="Your full name*" name="name">
+        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone">
+        <input type="text" class="input modal__input" placeholder="Email*" name="email">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__buttonarea">
           <button class="button modal__button" type="submit">Send</button>
@@ -588,7 +590,7 @@ trip - full day" class="card__image">
   <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
+  <!-- <script src="js/jquery.validate.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 </html>
