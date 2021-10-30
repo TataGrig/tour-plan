@@ -714,7 +714,7 @@ template {
   margin-left: 8px;
 }
 .booking__button {
-  padding: 13px 84px;
+  padding: 13px 83px;
   width: 100%;
   min-height: 45px;
   font-size: 14px;
@@ -1200,8 +1200,6 @@ template {
 }
 .footer__logo {
   width: 166px;
-  grid-row: 1/3;
-  align-self: stretch;
 }
 .footer__categories {
   grid-row: 1/4;
@@ -1328,6 +1326,17 @@ template {
 .footer__payment {
   grid-column: 4/5;
   justify-self: end;
+}
+
+.link-block {
+  display: block;
+  align-self: stretch;
+  grid-row: 1/3;
+}
+
+.tel__link, .email__link {
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 .modal__overlay {
@@ -1561,10 +1570,6 @@ template {
     grid-template-columns: repeat(20, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__logo {
-    grid-row: 1/2;
-    grid-column: span 5;
-  }
   .footer__categories {
     grid-row: 2/3;
     grid-column: span 6;
@@ -1602,6 +1607,11 @@ template {
   }
   .footer__payment {
     grid-column: 15/21;
+  }
+
+  .link-block {
+    grid-row: 1/2;
+    grid-column: span 5;
   }
 }
 @media (max-width: 768px) {

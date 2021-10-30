@@ -210,7 +210,7 @@
               <span class="packages-info__old-price">$ 10,500</span>
               <div class="packages__buttonarea">
                 <span class="packages-info__new-price">$ 8,500</span>
-                <button class="packages__button packages__button_large ">Book Now</button>
+                <button data-toggle="modal" class="packages__button packages__button_large ">Book Now</button>
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@
               <span class="packages-info__old-price">$ 8,500</span>
               <div class="packages__buttonarea">
                 <span class="packages-info__new-price">$ 3,000</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -263,7 +263,7 @@
               <span class="packages-info__old-price">$ 10,500</span>
               <div class="packages__buttonarea">
                 <span class="packages-info__new-price">$ 9,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -289,7 +289,7 @@
               <span class="packages-info__old-price">$ 4,500</span>
               <div class="packages__buttonarea">
                 <span class="packages-info__new-price">$ 2,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -315,7 +315,7 @@
               <span class="packages-info__old-price">$ 6,500</span>
               <div class="packages__buttonarea">
                 <span class="packages-info__new-price">$ 3,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -448,13 +448,13 @@
         <div class="card activities__card">
           <img src="img/chamarel.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
         <div class="card activities__card">
           <img src="img/golf.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
         <div class="card activities__card">
@@ -462,13 +462,13 @@
 trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
           trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
         <div class="card activities__card">
           <img src="img/marine-quest.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
       </div>
@@ -480,7 +480,7 @@ trip - full day" class="card__image">
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <a href="#" class="link-block"><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -533,9 +533,12 @@ trip - full day" class="card__image">
           <ul class="footer__ul">
             <li class="footer__item footer__item_mb_2">
               <div class="footer__icon-wrapper"><img src="img/map-marker.svg" alt="Icon: Map Marker" class="footer__icon"></div>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</li>
-            <li class="footer__item footer__item_mb_2"><div class="footer__icon-wrapper"><img src="img/business-phone.svg" alt="Icon: Business Phone" class="footer__icon"></div>Tel (business hours) : 269 1500 <br/> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br/> Tel (hotline) Sunday:
-            52-56-61-38 (08:00 am – 14:00 pm)</li>
-            <li class="footer__item footer__item_mb_2"><div class="footer__icon-wrapper"><img src="img/envelope.svg" alt="Icon: Envelope" class="footer__icon"></div>cherly.lawson@example.com</li>
+            <li class="footer__item footer__item_mb_2">
+              <div class="footer__icon-wrapper">
+                <img src="img/business-phone.svg" alt="Icon: Business Phone" class="footer__icon">
+              </div>Tel (business hours):<a href="tel:269 1500" class="tel__link">269 1500</a> <br/> Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="tel__link">52-56-61-38</a> (08:00 am – 20:00 pm)<br/> Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="tel__link">52-56-61-38</a>
+             (08:00 am – 14:00 pm)</li>
+            <li class="footer__item footer__item_mb_2"><div class="footer__icon-wrapper"><img src="img/envelope.svg" alt="Icon: Envelope" class="footer__icon"></div> <a href="mailto:cherly.lawson@example.com" class="email__link">cherly.lawson@example.com</a> </li>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
