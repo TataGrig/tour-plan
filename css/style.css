@@ -50,6 +50,11 @@ img {
 
 .invalid {
   color: #EC1F46;
+  max-width: 350px;
+}
+
+.invalid_span {
+  max-width: 350px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

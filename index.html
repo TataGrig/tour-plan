@@ -328,11 +328,14 @@
       <h2 class="newsletter-title newsletter__title">subscribe to our
         <span class="newsletter-title_strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form_subs">
+      <div>
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
         <input type="hidden" name="form_name" value="2"></input>
         <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
         <button class="subscribe__button">Send</button>
       </form>
+      <span class="invalid_span invalid" style="display: none; max-width: 350px;">"Your email address must be in the format of name@domain.com"</span>
+    </div>
     </div>
     <!-- /.newsletter-wrapper -->
   </section>
