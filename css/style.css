@@ -48,6 +48,10 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1266,6 +1270,9 @@ template {
   color: inherit;
 }
 .footer__input {
+  width: 100%;
+}
+.footer__input-group {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1454,7 +1461,7 @@ template {
     height: 255px;
   }
 
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
 }
@@ -1598,7 +1605,7 @@ template {
   .footer__form {
     margin-bottom: 16px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 48%;
   }
   .footer-information {
@@ -2033,7 +2040,7 @@ template {
   .footer__message {
     width: 100%;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
   .footer__form {

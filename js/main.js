@@ -70,4 +70,63 @@ $(document).on('keydown', function(e){
    }
 });
 
+//обработка форм
+$(".form").each(function(){
+  $(this).validate({
+    errorClass: "invalid",
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: {
+        required: true,
+        minlength: 16
+      }
+    },
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "The name should have at least 2 letters",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      phone: {
+        required: "Please specify your phone number",
+        minlength: "Your phone number must be in the format of: +7 (999) 999-99-99,"
+      },
+    },
+  })
+
+  $(".form_subs").validate({
+    errorClass: "invalid_subs",
+    rules: {
+      email: {
+        required: function(){ removeInvalid()},
+        email: true
+      }
+    },
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+    },
+  })
+
+$('.form').ready(function(){
+    $("[name='phone']").mask('+7(000)000-00-00');
+  });
+  
+
+  })
 });
+
+function removeInvalid() {
+  const emailInput = document.querySelector('.subscribe__input')
+  emailInput.classList.remove('invalid_subs');
+  console.log(emailInput.classList);
+}
+
