@@ -1050,8 +1050,7 @@ template {
 }
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1063,10 +1062,12 @@ template {
   cursor: pointer;
 }
 .reviews-slider__button_prev {
+  transform: translateX(50%);
   left: 0;
   background-image: url(../img/review-arrow-prev.svg);
 }
 .reviews-slider__button_next {
+  transform: translateX(-50%);
   right: 0;
   background-image: url(../img/review-arrow-next.svg);
 }
@@ -1090,7 +1091,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
-  margin-top: 9px;
+  margin-top: 7px;
   margin-bottom: 10px;
 }
 .reviews-slider__date {
@@ -1098,11 +1099,13 @@ template {
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
-  margin-bottom: 4px;
+  margin-bottom: -3px;
 }
 .reviews-slider__rating {
   display: flex;
   align-items: center;
+  width: 7px;
+  height: 7px;
 }
 .reviews-slider__text {
   max-width: 537px;
@@ -1205,14 +1208,19 @@ template {
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-auto-rows: minmax(22px, -webkit-min-content);
   grid-auto-rows: minmax(22px, min-content);
-  grid-gap: 20px;
+  grid-row-gap: 20px;
+  grid-column-gap: 40px;
   align-items: start;
 }
 .footer__logo {
-  width: 166px;
+  width: 160px;
+  height: 170px;
 }
 .footer__categories {
   grid-row: 1/4;
+}
+.footer__legal {
+  margin-left: 0px;
 }
 .footer__social-links {
   display: flex;
@@ -1223,19 +1231,27 @@ template {
 .footer__social-network {
   display: flex;
   align-items: center;
-  grid-row: 2/4;
+  grid-row: 2/5;
   grid-column: span 2;
 }
 .footer__contact-details {
+  grid-row: 5;
   grid-column: span 2;
 }
 .footer__contact-form {
   grid-column: span 2;
+  grid-row: 5;
 }
 .footer__ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.footer__ul-legal {
+  margin-left: 54px;
+}
+.footer__ul-contact {
+  padding-left: 5px;
 }
 .footer__title {
   font-style: normal;
@@ -1245,11 +1261,17 @@ template {
   text-transform: uppercase;
   margin: 0 0 16px 0;
 }
+.footer__title-legal {
+  margin-left: 54px;
+}
+.footer__title-contact, .footer__title-form {
+  margin: 5px 0 30px -4px;
+}
 .footer__title_inline {
   margin: 0 43px 0 0;
 }
-.footer__title_mb_3 {
-  margin-bottom: 30px;
+.footer__title-form {
+  margin: -5px 0 32px -2px;
 }
 .footer__item {
   display: flex;
@@ -1260,16 +1282,23 @@ template {
   line-height: 160%;
   color: #BDBDBD;
 }
-.footer__item_mb_2 {
+.footer__item_mb_15 {
+  margin-bottom: 15px;
+}
+.footer__item_mb_20 {
   margin-bottom: 20px;
 }
 .footer__icon-wrapper {
   min-width: 40px;
   margin-top: 5px;
+  margin-right: -4px;
 }
 .footer__text {
   color: #BDBDBD;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
 .footer__link {
   text-decoration: none;
@@ -1342,8 +1371,10 @@ template {
 
 .link-block {
   display: block;
-  align-self: stretch;
+  align-self: center;
+  justify-items: center;
   grid-row: 1/3;
+  margin-top: 28px;
 }
 
 .tel__link, .email__link {

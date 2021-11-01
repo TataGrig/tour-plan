@@ -41,8 +41,8 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
-      transform: translateY(-50%)
+      top: 40%
+      // transform: translateY(-50%)
       width: 30px
       height: 30px
       background-repeat: no-repeat
@@ -53,9 +53,11 @@
       z-index: 30
       cursor: pointer
       &_prev
+        transform: translateX(50%)
         left: 0
         background-image: url(../img/review-arrow-prev.svg)
       &_next
+        transform: translateX(-50%)
         right: 0
         background-image: url(../img/review-arrow-next.svg)
     &__profile
@@ -75,17 +77,19 @@
       font-size: 12px
       line-height: 15px
       color: $primary
-      margin-top: 9px
+      margin-top: 7px
       margin-bottom: 10px
     &__date
       font-style: normal
       font-weight: normal
       font-size: 10px
       line-height: 13px
-      margin-bottom: 4px
+      margin-bottom: -3px
     &__rating
       display: flex
       align-items: center
+      width: 7px
+      height: 7px
     &__text
       max-width: 537px
       font-style: normal
