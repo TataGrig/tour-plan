@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Your Plan - Hotel Booking</title>
-<link
+  <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+  <link rel="icon" href="/icon.ico" type="image/x-icon">
+  <link
   href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -164,7 +166,7 @@
           </div>
           <!-- /.booking -->
           <div class="map">
-            <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95721.59017437529!2d100.89095828034039!3d12.939548269880628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310295f9fed4f57f%3A0xb444f0d37635277!2sHillton%20Holiday!5e0!3m2!1sru!2sus!4v1633634027056!5m2!1sru!2sus" width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95721.59017437529!2d100.89095828034039!3d12.939548269880628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310295f9fed4f57f%3A0xb444f0d37635277!2sHillton%20Holiday!5e0!3m2!1sru!2sus!4v1633634027056!5m2!1sru!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <!-- /.map -->
         </div>
@@ -181,7 +183,7 @@
       <div class="packages-wrapper">
         <div class="packages-card__haven">
           <img src="img/blue-haven.jpg" alt="Hotel Blue haven view" class="packages__img_large">
-          <span class="packages__sale_large">Flash offer</span>
+          <span class="packages__sale_large">Flash Offer</span>
           <div class="packages__description_large">
             <div class="score score__stars">
               <img class="score__item" src="img/star.svg" alt="star" />
@@ -194,7 +196,7 @@
             <p class="packages__hotel-description">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea
             llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim
             laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
-            <div class="packages-info">
+            <div class="packages-info_haven">
               <div class="packages-info__address">
                 <img src="img/map-pin.svg" alt="Icon: Location" class="packages__icon">
                 <span class="packages__text">1749 Wheeler Ridge Delaware</span>
@@ -220,7 +222,6 @@
           <span class="packages__sale">Flash offer</span>
           <div class="packages__description">
             <h3 class="packages__hotel-name">LUX* Belle Mare</h3>
-
             <div class="packages-info">
               <div class="packages-info__address">
                 <img src="img/map-pin.svg" alt="Icon: Location" class="packages__icon">
@@ -328,14 +329,11 @@
       <h2 class="newsletter-title newsletter__title">subscribe to our
         <span class="newsletter-title_strong">Newsletter</span>
       </h2>
-      <div>
         <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-        <input type="hidden" name="form_name" value="2"></input>
+        <input type="hidden" name="form_name" value="2">
         <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
         <button class="subscribe__button">Send</button>
       </form>
-      <span class="invalid_span invalid" style="display: none; max-width: 350px;">"Your email address must be in the format of name@domain.com"</span>
-    </div>
     </div>
     <!-- /.newsletter-wrapper -->
   </section>
@@ -539,8 +537,9 @@ trip - full day" class="card__image">
             <li class="footer__item footer__item_mb_2">
               <div class="footer__icon-wrapper">
                 <img src="img/business-phone.svg" alt="Icon: Business Phone" class="footer__icon">
-              </div>Tel (business hours):<a href="tel:269 1500" class="tel__link">269 1500</a> <br/> Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="tel__link">52-56-61-38</a> (08:00 am – 20:00 pm)<br/> Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="tel__link">52-56-61-38</a>
-             (08:00 am – 14:00 pm)</li>
+              </div>
+              <div class="telephone__links">Tel (business hours): <a href="tel:2691500" class="tel__link">269 1500</a><br/>Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="tel__link">52-56-61-38</a> (08:00 am – 20:00 pm)<br/> Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="tel__link">52-56-61-38</a>
+             (08:00 am – 14:00 pm)</div></li>
             <li class="footer__item footer__item_mb_2"><div class="footer__icon-wrapper"><img src="img/envelope.svg" alt="Icon: Envelope" class="footer__icon"></div> <a href="mailto:cherly.lawson@example.com" class="email__link">cherly.lawson@example.com</a> </li>
           </ul>
         </div>
@@ -580,9 +579,9 @@ trip - full day" class="card__image">
         <img src="img/close.svg" alt="Icon: close">
       </a>
       <h3 class="modal__title modal__title_mb_3">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form form" form_name="1">
+      <form action="send.php" method="POST" class="modal__form form">
         <input type="hidden" name="form_name" value = "1"/>
-        <input type="text" class="input modal__input" placeholder="Your full name*" name="name" required="" minlenght="2">
+        <input type="text" class="input modal__input" placeholder="Your full name*" name="name" >
         <input type="tel" class="input modal__input" placeholder="Phone number*" name="phone">
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required="">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>

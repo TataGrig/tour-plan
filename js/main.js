@@ -114,34 +114,6 @@ $('.form').ready(function(){
     $("[name='phone']").mask('+7(000)000-00-00');
 });
 
-let observer = new MutationObserver((mutations) => {
-  mutations.forEach((mutation) => {
-      if(mutation.removedNodes) {
-        
-        for (let i = 0; i < mutation.removedNodes.length; i++) {
-        const subscrForm = document.querySelector(".newsletter__subscribe");
-        document.querySelector('.invalid_span').style.display = 'none';
-        let node = mutation.removedNodes[i]
-      }
-    }
-    if (mutation.addedNodes) {
-      for (let i = 0; i < mutation.addedNodes.length; i++) {
-      const subscrForm = document.querySelector(".newsletter__subscribe");
-      document.querySelector('.invalid_span').textContent = subscrForm.querySelector('label').textContent;
-      document.querySelector('.invalid_span').style.display = 'block';
-      let node = mutation.addedNodes[i]
-      }
-    }
-  })
-})
-
-observer.observe(document.querySelector(".newsletter__subscribe"), {
-    childList: true
-  , subtree: true
-  , attributes: false
-  , characterData: false
-})
-
 
 
 
