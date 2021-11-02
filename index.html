@@ -7,17 +7,17 @@
   <title>Best Your Plan - Hotel Booking</title>
   <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
   <link rel="icon" href="/icon.ico" type="image/x-icon">
-  <link
-  href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="zoom-out-right">
           <img src="img/horizontal-logo.svg" alt="Logo: Best tour plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
@@ -181,7 +181,7 @@
     <div class="container">
       <h2 class="packages__title">Other packages</h2>
       <div class="packages-wrapper">
-        <div class="packages-card__haven">
+        <div class="packages-card__haven" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
           <img src="img/blue-haven.jpg" alt="Hotel Blue haven view" class="packages__img_large">
           <span class="packages__sale_large">Flash Offer</span>
           <div class="packages__description_large">
@@ -192,7 +192,7 @@
               <img class="score__item" src="img/star.svg" alt="star" />
               <img class="score__item" src="img/star.svg" alt="star" />
             </div>
-            <h3 class="packages__hotel-name">Hotel Blue Haven</h3>
+            <h3 class="packages__hotel-name packages__hotel-name_large">Hotel Blue Haven</h3>
             <p class="packages__hotel-description">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea
             llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim
             laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
@@ -210,14 +210,14 @@
                 <span class="packages__text">1 x Room</span>
               </div>
               <span class="packages-info__old-price">$ 10,500</span>
-              <div class="packages__buttonarea">
+              <div class="packages__buttonarea packages__buttonarea_large">
                 <span class="packages-info__new-price">$ 8,500</span>
                 <button data-toggle="modal" class="packages__button packages__button_large ">Book Now</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="packages-card packages-card__Belle">
+        <div class="packages-card packages-card__Belle" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
           <img src="img/belle-mare.jpg" alt="LUX Belle mare view" class="packages__img">
           <span class="packages__sale">Flash offer</span>
           <div class="packages__description">
@@ -243,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-card packages-card__white">
+        <div class="packages-card packages-card__white" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
           <img src="img/white-palace.jpg" alt="White Palace view" class="packages__img">
           <span class="packages__sale">Flash offer</span>
           <div class="packages__description">
@@ -269,7 +269,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-card packages-card__luxury">
+        <div class="packages-card packages-card__luxury" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
           <img src="img/luxury-place.jpg" alt="Luxury Place view" class="packages__img">
           <span class="packages__sale">Flash offer</span>
           <div class="packages__description">
@@ -295,7 +295,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-card packages-card__five">
+        <div class="packages-card packages-card__five" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
           <img src="img/five-star.jpg" alt="Hotel Five Star view" class="packages__img">
           <span class="packages__sale">Flash offer</span>
           <div class="packages__description">
@@ -446,19 +446,19 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in" data-aos-delay="200">
           <img src="img/chamarel.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in" data-aos-delay="600">
           <img src="img/golf.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in" data-aos-delay="400">
           <img src="img/hiking.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
@@ -466,7 +466,7 @@ trip - full day" class="card__image">
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in" data-aos-delay="800">
           <img src="img/marine-quest.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
@@ -598,6 +598,7 @@ trip - full day" class="card__image">
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
