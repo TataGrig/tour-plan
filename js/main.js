@@ -56,6 +56,8 @@ $(document).ready(function () {
     const modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
+    const body = document.querySelector("body");
+    body.classList.remove("body_stop_scrolling");
   }
 
   function openModal() {
@@ -64,7 +66,7 @@ $(document).ready(function () {
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
     const body = document.querySelector("body");
-    body.classList.toggle("body_stop_scrolling");
+    body.classList.add("body_stop_scrolling");
   }
 
   $(document).on('keydown', function(e){
