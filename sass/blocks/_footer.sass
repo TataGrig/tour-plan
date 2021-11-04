@@ -39,7 +39,7 @@
     padding: 0
     margin: 0
     list-style: none
-    &-legal
+    &_legal
       margin-left: 54px
     &-contact
       padding-left: 5px
@@ -50,10 +50,10 @@
     line-height: 23px
     text-transform: uppercase
     margin: 0 0 16px 0
-    &-legal
+    &_legal
       margin-left: 54px
     &-contact,&-form
-      margin: 5px 0 30px -4px
+      margin: 5px 0 30px 0px
     &_inline
       margin: 0 43px 0 0
     &-form
@@ -86,11 +86,12 @@
     color: inherit
   &__input
     width: 100%
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
     &-group
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
+
       margin-bottom: 15px
       flex-basis: 48%
   &__form
@@ -147,3 +148,8 @@
 .tel__link, .email__link
   text-decoration: none
   color: $footer-text-color
+.footer__input-group label
+  color: $primary
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
