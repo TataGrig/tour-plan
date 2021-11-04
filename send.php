@@ -20,7 +20,9 @@ if($form == "1") {
     <b>Phone:</b> $phone<br><br>
     <b>Message:</b><br>$message
     ";
-} else {
+}
+
+if($form == "2") {
     $title = "New Subscriber from Best Tour Plan";
     $body = "
     <h2>New Subscriber</h2>
