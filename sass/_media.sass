@@ -31,6 +31,9 @@
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
+  .button
+    &:hover
+      box-shadow: none
   .logo
     width: 132px
   .navbar
@@ -45,9 +48,14 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &:hover
+          color: inherit
   .search
     &__input
       width: 340px
+    &__button
+      &:hover
+        box-shadow: none
   .hotel
     padding-bottom: 30px
     &-grid
@@ -70,6 +78,9 @@
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(3, auto)
       grid-gap: 20px
+    &__button
+      &:hover
+        box-shadow: none
     &-card
       width: 100%
       &_large
@@ -81,6 +92,10 @@
   .newsletter
     &-section
       margin-top: 40px
+  .subscribe
+    &__button
+      &:hover
+        box-shadow: none
   .reviews
     padding: 40px 0 60px 0
     &__title
@@ -109,6 +124,9 @@
     padding: 24px 110px 24px 26px
     width: 48%
     height: 255px
+    &__button
+      &:hover
+        box-shadow: none
   .footer
     padding-top: 73px
     &-wrapper
@@ -145,6 +163,9 @@
     &__ul
       &_legal
         margin-left: 3px
+    &__link
+      &:hover
+        transform: none
     &__form
       width: 539px
       margin-bottom: 16px
@@ -155,17 +176,28 @@
       grid-column: 1 / 8
       justify-self: start
       grid-row: 5 / 6
+      &__link
+        &:hover
+          text-decoration: none
     &__payment
       grid-column: 9 / 11
       grid-row: 5 / 6
     &__logo
       width: 95px
       height: 116px
+      &:hover
+        transform: none
+    &__icon
+      &:hover
+        transform: none
   .link-block
     margin-top: 0
     grid-row: 1 / 2
     grid-column: span 2
-@media (max-width: 768px)
+  .email-link, .tel-link
+    &:hover
+      text-decoration: none
+  @media (max-width: 768px)
   .container
     max-width: 700px
   .navbar
@@ -239,10 +271,6 @@
         &_mobile
           &_visible
             display: block
-  .search
-    &__button
-      &:hover
-        box-shadow: inset 0 0 0 30px DarkRed
   .menu
     &-button
       display: flex
@@ -351,9 +379,9 @@
     &__form
       width: 100%
     &-information
-      grid-row: 8 / 9
+      grid-row: 5 / 6
     &__payment
-      grid-row: 9 /10
+      grid-row: 5 / 6
   .modal
     &__dialog
       padding: 30px 57px
@@ -539,7 +567,9 @@
       margin-top: 15px
     &-information
       justify-self: start
+      grid-row: 8 / 9
     &__payment
+      grid-row: 9 / 10
       grid-column: 1
       justify-self: start
       margin-top: -22px
@@ -615,6 +645,8 @@
     &-slider
       &__button_prev
         margin-left: -110px
+      &__text
+        text-align: left
   .activities
     padding: 36px 0 40px 0
     &__card
@@ -672,7 +704,6 @@
       min-height: calc(2px + 1vh)
     &__message
       min-height: calc(2px + 1vh)
-      // 100px
       font-size: 10px
       line-height: 10px
     &__title
