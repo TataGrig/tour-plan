@@ -45,6 +45,10 @@ $(document).ready(function () {
     body.classList.toggle("body_stop_scrolling");
   });
 
+
+  
+  
+
   const modalButton = $('[data-toggle=modal]');
   const closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);

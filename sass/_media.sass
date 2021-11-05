@@ -239,6 +239,10 @@
         &_mobile
           &_visible
             display: block
+  .search
+    &__button
+      &:hover
+        box-shadow: inset 0 0 0 30px DarkRed
   .menu
     &-button
       display: flex
@@ -660,15 +664,20 @@
         justify-content: space-between
   .modal
     &__dialog
-      padding: 20px 10px
+      padding: 10px 10px
       width: 85%
+      height: 95%
     &__input
       font-size: 10px
       line-height: 10px
+      min-height: calc(2px + 1vh)
     &__message
-      min-height: 100px
+      min-height: calc(2px + 1vh)
+      // 100px
       font-size: 10px
       line-height: 10px
+    &__title
+      margin-bottom: calc(2px + 1vh)
 @media (max-height: 375px)
   .navbar
     line-height: 1.0
@@ -683,7 +692,7 @@
       margin-left: 0
   .modal
     &__dialog
-      padding: 13px 50px
+      padding: 13px 30px
     &__title
       font-size: 16px
       margin-bottom: 3px
