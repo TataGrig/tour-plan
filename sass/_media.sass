@@ -16,7 +16,7 @@
         width: 626px
     &__description
       &-large
-        padding: 24px 20px 23px 20px
+        padding: 24px 20px 27px 20px
     &-info
       &__room
         &_large
@@ -419,28 +419,30 @@
       padding: 15px 22px
       &-large
         max-height: 370px
-        padding: 35px 21px 60px 43px
+        padding: 40px 21px 65px 43px
     &__hotel-name
       font-size: 16px
       line-height: 16px
       margin-bottom: 14px
-      // &_large
-      //   margin-bottom: 38px
+      &_large
+        margin-bottom: 38px
     &-info
       &__room
         margin-bottom: 13px
+        &_large
+          margin-bottom: 25px
     &__buttonarea
-      // &_large
-      //   margin-top: 20px
+      &_large
+        margin-top: 20px
     &__button
       font-size: 12px
       line-height: 14px
       padding: 9px 20px
     &__hotel-description
       display: none
-// .score
-//   &__stars
-//     margin-bottom: 18px
+  .score
+    &-items
+      margin-bottom: 18px
 @media (max-width: 576px)
   .container
     max-width: 92%
@@ -501,6 +503,9 @@
       &__room
         &_large
           margin-bottom: 13px
+    &__buttonarea
+      &_large
+        margin-top: 0
   .score
     display: none
   .newsletter
